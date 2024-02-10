@@ -1,81 +1,94 @@
 
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; 
+}
+
+
+
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #fffdfd;
-  background-color: rgb(33,37,41);
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#footer-row{
-  padding-left: 160px;
-}
-
-
-.carousel {
-  margin-bottom: 4rem;
-}
-
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
+header{
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 
-.carousel-item {
-  height: 32rem;
-}
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
+.cover-container {
+  max-width: 42em;
 }
 
-
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: 400;
+h1{
+  font-family: 'Protest Revolution', sans-serif;
+  font-size: 100px;
+  font-weight: 900;
 }
 
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+h3{
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 900;
+  color:rgba(255, 255, 255, .5);
 }
 
-
-#div-col{
-  padding: 20px;
-
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
-
-
-.featurette-divider {
-  margin: 5rem 0; 
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
 }
 
-
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgb(243, 239, 239);
+  color: #fff;
 }
 
-
-@media (min-width: 40em) {
-
-
-  .featurette-heading {
-    font-size: 50px;
-  }
+.nav-masthead .nav-link {
+  margin-left: 25px;
 }
 
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .background-clip{
+    width: 100%;
+    height: auto;}
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .background-clip{
+    width: auto;
+    height: 100%;}
+    }
+
+@media(max-width: 992px) and (max-height: 821px) {
+     #brand-item{
+         text-align: center;
+          margin-top: 5px;
+        
+}
+}
+
+@media only screen and (max-width: 1000px) and (max-height: 821px) {
+    #brand {
+        text-align: center;
+    }
 }
